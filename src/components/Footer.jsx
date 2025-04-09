@@ -31,7 +31,7 @@ function Footer() {
         </a>
       </div>
       <p className={styles.footerText}>
-        Connect via LinkedIn / View Sourcd on GitHub
+        Connect via LinkedIn / View Source on GitHub
       </p>
       <p className={styles.footerText}>
         Black Hole Simulation Project
