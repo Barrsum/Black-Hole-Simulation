@@ -1,0 +1,66 @@
+/* src/styles/Controls.module.css */
+.controlsContainer {
+    width: 100%;
+    max-width: 900px; /* Match canvas width */
+    margin-top: 20px; /* Adjusted from 30 to 20 */
+    padding: 15px;
+    background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent dark background */
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+  }
+  
+  .controlsTitle {
+    margin-bottom: 15px;
+    color: #00ffff; /* Cyan title */
+    font-weight: 600;
+    font-size: 1.2rem; /* Slightly smaller title */
+  }
+  
+  .buttonGroup {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  .throwButton {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    background-color: #005f5f; /* Dark cyan */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: inline-flex; /* Helps align emoji and text */
+    align-items: center;
+    gap: 5px; /* Space between emoji and text */
+  }
+  
+  .throwButton:hover {
+    background-color: #008f8f; /* Lighter cyan on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .throwButton:active {
+    background-color: #004c4c; /* Darker cyan when clicked */
+    transform: translateY(0px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .throwButton {
+      font-size: 0.8rem;
+      padding: 8px 10px;
+      flex-basis: 45%; /* Make buttons take up more width on small screens */
+      justify-content: center; /* Center content within button */
+    }
+    .controlsContainer {
+        padding: 10px;
+    }
+    .controlsTitle {
+        font-size: 1.1rem;
+    }
+  }

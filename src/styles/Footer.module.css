@@ -1,0 +1,57 @@
+/* src/styles/Footer.module.css */
+.appFooter {
+    background-color: #1a1a1a; /* Dark grey footer background */
+    padding: 20px 30px;
+    text-align: center;
+    border-top: 1px solid #333;
+    width: 100%;
+    margin-top: auto; /* Push footer to bottom if content is short */
+    position: relative;
+    z-index: 10; /* Ensure footer is above canvas if canvas is full screen */
+  }
+  
+  .socialLinks {
+    margin-bottom: 10px;
+  }
+  
+  .socialIconLink {
+    color: #cccccc; /* Light grey icons */
+    font-size: 1.8rem; /* Larger icons */
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Prevents weird spacing issues */
+  }
+  
+  .socialIconLink:hover {
+    color: #00ffff; /* Cyan on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  .footerText {
+    margin: 5px 0;
+    font-size: 0.85rem;
+    color: #aaaaaa; /* Lighter grey text */
+  }
+  
+  /* Make links within footer text use the global link color */
+  .footerText a {
+     color: #00ffff;
+  }
+  .footerText a:hover {
+     text-decoration: underline;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .appFooter {
+      padding: 15px 15px;
+    }
+    .socialIconLink {
+      font-size: 1.6rem;
+      margin: 0 10px;
+    }
+    .footerText {
+      font-size: 0.8rem;
+    }
+  }

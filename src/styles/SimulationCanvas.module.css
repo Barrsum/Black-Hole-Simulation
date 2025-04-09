@@ -1,0 +1,25 @@
+/* src/styles/SimulationCanvas.module.css */
+.canvasContainer {
+    width: 100%;
+    max-width: 900px; /* Max width for larger screens */
+    height: 50vh; /* Start with 50% of viewport height */
+    min-height: 400px; /* Minimum height */
+    background-color: #050505; /* Very dark grey, almost black */
+    margin-bottom: 30px; /* Space below the canvas */
+    border-radius: 8px;
+    overflow: hidden; /* Ensure nothing spills out */
+    border: 1px solid #222; /* Subtle border */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1); /* Subtle cyan glow */
+  }
+  
+  /* Adjust height on larger screens if needed */
+  @media (min-width: 768px) {
+    .canvasContainer {
+      height: 60vh; /* Taller on desktops */
+    }
+  }
+   @media (min-width: 1024px) {
+    .canvasContainer {
+      height: 65vh; /* Even taller on large desktops */
+    }
+  }

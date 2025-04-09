@@ -1,0 +1,79 @@
+/* src/styles/Header.module.css */
+.appHeader {
+    background-color: #1a1a1a;
+    padding: 15px 30px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    /* Make header a flex container to position button */
+    display: flex;
+    flex-direction: column; /* Stack title/credit and button */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Add space between content and button */
+  }
+  
+  .headerContent {
+      text-align: center; /* Ensure title/credit remain centered */
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 2rem;
+    color: #00ffff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff;
+    margin-bottom: 5px;
+  }
+  
+  .creatorCredit {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  
+  /* New styles for toggle button */
+  .toggleButton {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background-color: #9f78ff; /* Use the purple from info section */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .toggleButton:hover {
+    background-color: #8a5fff; /* Lighter purple */
+    transform: scale(1.05);
+  }
+  
+  .toggleButton:active {
+    background-color: #7a4ecc; /* Darker purple */
+    transform: scale(1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.5rem;
+    }
+    .creatorCredit {
+      font-size: 0.8rem;
+    }
+    .appHeader {
+      padding: 10px 15px;
+      gap: 8px; /* Reduce gap on smaller screens */
+    }
+     .toggleButton {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+  
+  /* Adjust layout on very small screens if needed */
+  @media (max-width: 480px) {
+     .title {
+         font-size: 1.3rem; /* Further reduce title */
+     }
+  }
