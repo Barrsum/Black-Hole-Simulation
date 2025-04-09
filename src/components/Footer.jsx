@@ -1,10 +1,10 @@
 // src/components/Footer.jsx
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import styles from '../styles/Footer.module.css'; // Import CSS module
+import styles from '../styles/Footer.module.css'; 
 
 function Footer() {
-  const currentYear = new Date().getFullYear(); // Get current year dynamically
+  const currentYear = new Date().getFullYear(); 
 
   return (
     <footer className={styles.appFooter}>
@@ -15,27 +15,25 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="Ram Bapat's LinkedIn Profile"
           title="Ram Bapat's LinkedIn Profile"
-          className={styles.socialIconLink} // Add class for styling
+          className={styles.socialIconLink} 
         >
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/Barrsum" // Updated GitHub link to profile
+          href="https://github.com/Barrsum/Black-Hole-Simulation.git" 
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Ram Bapat's GitHub Profile"
-          title="Ram Bapat's GitHub Profile"
-          className={styles.socialIconLink} // Add class for styling
+          aria-label="Git Repo"
+          title="Source Git Repo"
+          className={styles.socialIconLink} 
         >
           <FaGithub />
         </a>
       </div>
       <p className={styles.footerText}>
-        Connect via LinkedIn / View Profile on GitHub
+        Connect via LinkedIn / View Sourcd on GitHub
       </p>
       <p className={styles.footerText}>
-        {/* Optional: Link to project repo later */}
-        {/* <a href="YOUR_PROJECT_REPO_LINK_HERE" target="_blank" rel="noopener noreferrer">View Project Source</a> */}
         Black Hole Simulation Project
       </p>
       <p className={styles.footerText}>
